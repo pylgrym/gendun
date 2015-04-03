@@ -45,6 +45,9 @@
     <ClInclude Include="DungGen1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BungBrownian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dung.cpp">
@@ -66,6 +69,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DungGen1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BungBrownian.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

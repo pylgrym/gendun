@@ -1,5 +1,25 @@
-﻿Build started 01/04/2015 21:36:25.
+﻿Build started 03/04/2015 16:29:45.
+     1>Project "C:\moria\gendun\dung.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\vs12\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\dung.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt BungBrownian.cpp ChildView.cpp
+         BungBrownian.cpp
+         Generating Code...
+         Compiling...
+         ChildView.cpp
+         Generating Code...
+       Link:
+         C:\vs12\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\moria\gendun\Debug\dung.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:C:\vs12\VC\Include\Manifest\dpiaware.manifest /DEBUG /PDB:"C:\moria\gendun\Debug\dung.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\moria\gendun\Debug\dung.lib" /MACHINE:X86 Debug\dung.res
+         Debug\BungBrownian.obj
+         Debug\ChildView.obj
+         Debug\dung.obj
+         Debug\DungGen1.obj
+         Debug\Kaching.obj
+         Debug\MainFrm.obj
+         Debug\stdafx.obj
+         Debug\theMark.obj
+         dung.vcxproj -> C:\moria\gendun\Debug\dung.exe
+     1>Done Building Project "C:\moria\gendun\dung.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.10
+Time Elapsed 00:00:01.70

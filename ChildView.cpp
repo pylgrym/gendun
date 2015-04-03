@@ -10,6 +10,7 @@
 
 #include "DungGen1.h"
 #include <sstream>
+#include "BungBrownian.h"
 
 
 #ifdef _DEBUG
@@ -69,51 +70,32 @@ BOOL CChildView::PreCreateWindow(CREATESTRUCT& cs)
 void CChildView::OnPaint() {
 	CPaintDC dc(this); // device context for painting
 
+
+  shrooms(dc);
+  return;
+
   /*
   Laby laby(101); // 51); // 101);
   laby.combine(); //  buildAll(); // dc);
   laby.draw(dc);
   */
 
-  // shrooms(dc);
-  // return;
-
-  
-  if (1) { // false) { //true) { // false) {
+  if (0) { 
     Blob blob(0);
     blob.run(&dc);
-  }
-  
-
-
-  return; 
-	
+  }	
 }
 
 
 
+
+
+
+
+
 void CChildView::shrooms(CPaintDC& dc) {
-  CBrush brush(RGB(240, 240, 240)); // RGB(rnd(255), rnd(255), rnd(255)));
-
-  CPoint p(250, 250);
-
-  for (int i = 0; i < 250; ++i) {
-
-    int dirB = rnd(2) ? 1 : -1;
-    int dir1 = dirB * rnd(7, 20); // (2, 7);
-    int xy = rnd(2);
-    CPoint dir(xy ? dir1 : 0, !xy ? dir1 : 0);
-
-    CPoint next = p + dir;
-    dc.MoveTo(p);
-    dc.LineTo(next);
-
-    CSize dims(rnd(2, 10), rnd(2, 10));
-    CPoint center(dims.cx / 2, dims.cy / 2);
-    CRect r(CPoint(next.x - center.x, next.y - center.y), dims); // CPoint(rnd(500), rnd(500)), , rnd(2, 10))); // , 2, 3, 4);
-    dc.FillRect(&r, &brush);
-    p = next;
-  }
+  Brown brown(46,37, &dc); 
+  brown.run(dc);
 }
 
 
